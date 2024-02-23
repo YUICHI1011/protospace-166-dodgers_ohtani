@@ -1,5 +1,8 @@
 <main class="main">
   <div class="inner">
+    <% if user_signed_in? %>
+    <p>こんにちは <%= current_user.name %> さん</p>
+      <% end %>
     <div class="card__wrapper">
       <% @prototypes.each do |prototype| %>
         <%= render 'prototype', prototype: prototype %>
