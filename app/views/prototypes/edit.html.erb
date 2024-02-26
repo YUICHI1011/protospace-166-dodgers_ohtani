@@ -3,14 +3,7 @@
     <div class="form__wrapper">
       <h2 class="page-heading">プロトタイプ編集</h2>
       <%# 部分テンプレートでフォームを表示する %>
-      <%= form_with(model: @prototype, local: true) do |form| %>
-      <%= form.text_field :name, placeholder: "プロトタイプの名称" %>
-      <%= form.text_field :name, placeholder: "キャッチコピー" %>
-      <%= form.text_field :name, placeholder: "コンセプト" %>
-      <%= form.text_field :image, placeholder: "Image Url" %>
-      <%= form.text_area :text, placeholder: "text", rows: "10" %>
-      <%= form.submit "SEND" %>
-    <% end %>
+      <%= render 'form', prototype: @prototype %>
     </div>
   </div>
 </div>
