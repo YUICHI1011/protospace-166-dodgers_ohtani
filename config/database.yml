@@ -50,6 +50,7 @@ test:
 #
 production:
   <<: *default
-  database: protospace_166_dodgers_ohtani_production
-  username: protospace_166_dodgers_ohtani
+  adapter: postgresql
+  database: protospace-166-dodgers-ohtani_production
+  username: protospace-166-dodgers-ohtani
   password: <%= ENV["PROTOSPACE_166_DODGERS_OHTANI_DATABASE_PASSWORD"] %>
