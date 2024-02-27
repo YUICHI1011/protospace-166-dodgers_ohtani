@@ -6,7 +6,6 @@ class CommentsController < ApplicationController
     else
       @prototype = @comment.prototype
       @comments = @prototype.comments
-      render prototype_path(params[:prototype_id])
     end
   end
 
